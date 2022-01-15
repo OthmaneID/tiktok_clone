@@ -1,9 +1,16 @@
 import "./App.css";
+import Videos from "./components/Videos";
 
 function App() {
   return (
-    <div className="App">
-      <h1>TikTok Clone Web App with MERN Stack !!</h1>
+    <div className="app">
+      <div className="app__videos">
+        <Videos />
+        <Videos />
+      </div>
+
+      {/* App Container */}
+      {/* <Videos/> */}
     </div>
   );
 }
