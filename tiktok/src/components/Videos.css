@@ -7,7 +7,19 @@
 }
 
 .video__player {
+  position: relative;
   object-fit: fill;
   width: 100%;
   height: 100%;
+}
+
+.PlayIcon {
+  position: absolute;
+  left: 50%;
+  margin-left: -50px;
+  top: 50%;
+  margin-top: -50px;
+  color: rgb(216, 214, 214);
+  opacity: 0.8;
+  font-size: 100px !important;
 }
