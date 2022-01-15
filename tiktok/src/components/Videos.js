@@ -1,7 +1,8 @@
 import React, { useRef, useState } from "react";
 import "./Videos.css";
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
-import { IconButton } from "@mui/material";
+import VideoFooter from "./VideoFooter";
+import VideoSidebar from "./VideoSidebar";
 
 const Videos = () => {
   const videoRef = useRef(null);
@@ -28,7 +29,9 @@ const Videos = () => {
 
       <PlayArrowIcon onClick={handleVideoPress} className="PlayIcon" fontSize="large" style={playing ? { display: "none" } : { display: "block" }} />
       {/* Video Footer */}
+      <VideoFooter />
       {/* Video Sidebar */}
+      <VideoSidebar />
     </div>
   );
 };
